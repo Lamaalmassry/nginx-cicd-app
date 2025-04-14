@@ -63,26 +63,17 @@ Automatically on push or pull_request to the main branch.
 Manually by selecting apply in the Run workflow UI.
 
 Actions:
-
 Provisions AWS resources using terraform apply (VPC, EC2, ECR, etc.).
-
 Builds & pushes Docker image to ECR.
-
 Deploys the Nginx container to the EC2 instance.
-
 Outputs EC2 public IP (e.g., http://<EC2_PUBLIC_IP>).
-
 Condition: Runs on push/pull_request or when input is apply.
 
 ❌ Destroy
 Trigger:
-
 Manually by selecting destroy in the Run workflow UI.
 
 Actions:
-
 Destroys all provisioned resources using terraform destroy.
-
 Fully cleans up the infrastructure.
-
 Condition: Runs only when the manual input is destroy.
