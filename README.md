@@ -47,9 +47,8 @@ The pipeline is triggered by pushes and pull requests to the `main` branch:
 ### Steps to Run
 
 1. **Clone this repository**:
-   ```bash
-https://github.com/Lamaalmassry/nginx-cicd-app.git
-cd nginx-cicd-app
+   ```bash https://github.com/Lamaalmassry/nginx-cicd-app.git
+      cd nginx-cicd-app
 
 
 
