@@ -137,7 +137,6 @@ resource "aws_ecr_repository" "nginx_repo" {
     scan_on_push = true
   }
 }
-
 # EC2 Instance
 resource "aws_instance" "ec2_instance" {
   ami                    = "ami-09115b7bffbe3c5e4" 
