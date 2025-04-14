@@ -47,15 +47,14 @@ The pipeline is triggered by pushes and pull requests to the `main` branch:
 ### Steps to Run
 
 1. **Clone this repository**:
-   ```bash https://github.com/Lamaalmassry/nginx-cicd-app.git
+   ```bash
+     https://github.com/Lamaalmassry/nginx-cicd-app.git
       cd nginx-cicd-app
-
-
 
 
 🚀 Apply and Destroy Actions (Workflow Guide)
 The CI/CD pipeline supports two primary actions via GitHub Actions workflow inputs:
-
+  ```bash
 ✅ Apply
 Triggers:
 
