@@ -127,6 +127,7 @@ jobs:
           echo "INSTANCE_ID=$INSTANCE_ID" >> "$GITHUB_ENV"
           echo "ECR_REPOSITORY_URL=$ECR_REPOSITORY_URL" >> "$GITHUB_ENV"
       - name: Deploy Docker Container to EC2
+      
         env:
           IMAGE_TAG: latest
         run: |
