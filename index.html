@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Nginx App</title>
+    <style>
+        /* General reset and font setup */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #74b9ff, #a29bfe);
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+            animation: backgroundAnimation 20s infinite alternate;
+        }
+
+        /* Background animation */
+        @keyframes backgroundAnimation {
+            0% {
+                background: linear-gradient(135deg, #74b9ff, #a29bfe);
+            }
+            100% {
+                background: linear-gradient(135deg, #ff6b6b, #f39c12);
+            }
+        }
+
+        /* Header styling with animation */
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            animation: fadeIn 2s forwards 1s;
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Paragraph styling with animation */
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin: 0 20px;
+            max-width: 600px;
+            opacity: 0;
+            animation: fadeIn 2s forwards 2s;
+        }
+
+        /* Button styling */
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #fff;
+            background-color: #0984e3;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            transform: scale(1);
+        }
+
+        .btn:hover {
+            background-color: #74b9ff;
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer styling */
+        footer {
+            margin-top: 40px;
+            font-size: 1rem;
+            color: #dfe6e9;
+            opacity: 0;
+            animation: fadeIn 2s forwards 3s;
+        }
+
+        /* Smooth scroll effect for buttons */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Button hover effect */
+        .btn:focus, .btn:active {
+            outline: none;
+            box-shadow: 0 0 0 3px #ff6b6b;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Nginx App!</h1>
+    <p>This is a modern, interactive web application running on Nginx. Explore and enjoy its functionality!</p>
+    <a href="#" class="btn">Learn More</a>
+    <footer>
+        &copy; 2025 My Nginx App. All rights reserved.
+    </footer>
+</body>
+</html>
